@@ -20,7 +20,7 @@ class AuthorsController extends AbstractController
      * @param AuthorsRepository $authorsRepository
      * @return Response
      */
-    public function index(AuthorsRepository $authorsRepository): Response
+    public function index(AuthorsRepository $authorsRepository):Response
     {
         return $this->render('authors/index.html.twig', [
             'authors' => $authorsRepository->findAll(),
