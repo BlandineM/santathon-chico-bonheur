@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #97aeda;
+    width: 40%;
+    height: 500px;
+    border-radius: 10%;
+    img {
+      width: 40%;
+    }
+    .quote {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 250px;
+      background: #f7953e;
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      p {
+        font-size: 1.2em;
+        text-align: center;
+        width: 80%;
+      }
+    }
+    p:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 26px;
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-right: 26px solid #f7953e;
+      border-bottom: 13px solid transparent;
+    }
+  }
+  .versus {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50%;
+  }
+}
