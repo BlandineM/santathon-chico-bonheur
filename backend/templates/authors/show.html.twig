@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Authors{% endblock %}
+
+{% block body %}
+    <h1>Authors</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ author.id }}</td>
+            </tr>
+            <tr>
+                <th>name</th>
+                <td>{{ author.authName }}</td>
+            </tr>
+            <tr>
+                <th>img</th>
+                <td><img src="/img/{{ author.image }}" alt="marie"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('authors_index') }}">back to list</a>
+
+    <a href="{{ path('authors_edit', {'id': author.id}) }}">edit</a>
+
+    {{ include('authors/_delete_form.html.twig') }}
+{% endblock %}
