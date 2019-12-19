@@ -17,6 +17,8 @@ class AuthorsController extends AbstractController
 {
     /**
      * @Route("/", name="authors_index", methods={"GET"})
+     * @param AuthorsRepository $authorsRepository
+     * @return Response
      */
     public function index(AuthorsRepository $authorsRepository): Response
     {
