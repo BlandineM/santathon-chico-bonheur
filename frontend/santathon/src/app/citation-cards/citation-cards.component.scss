@@ -1,38 +1,36 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        background-color: grey;
-        width: 40%;
-        height: 500px;
-        border-radius: 10%;
-        .quote{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
-            height: 250px;
-            background: red;
-            position: relative;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
-            p{
-                font-size: 1.2em;
-                
-               
-            }
-        }
-        p:before{
-            content: "";
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgba(115, 111, 111, 0.5);
+    width: 40%;
+    height: 500px;
+    border-radius: 10%;
+    .quote {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 250px;
+      background: red;
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      p {
+        font-size: 1.2em;
+      }
+    }
+    p:before {
+      content: "";
       position: absolute;
       right: 100%;
       top: 26px;
@@ -41,12 +39,12 @@
       border-top: 13px solid transparent;
       border-right: 26px solid red;
       border-bottom: 13px solid transparent;
-        }
     }
-    .versus {
-        width: 150px;
-        height: 150px;
-        background-color: blue;
-        border-radius: 50%;
-    }
+  }
+  .versus {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50%;
+  }
 }
