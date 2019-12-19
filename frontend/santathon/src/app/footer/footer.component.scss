@@ -1,0 +1,22 @@
+footer {
+  font-family: "Righteous", cursive;
+  background-color: #3198b8;
+  border-radius: 40px;
+
+  p {
+    text-align: center;
+    font-size: 2em;
+    padding: 1px;
+    margin: 0;
+  }
+  ul {
+    font-family: "Righteous", cursive;
+    display: flex;
+    justify-content: space-around;
+    li {
+      list-style: none;
+      font-size: 1.8em;
+      padding: 1px;
+    }
+  }
+}
