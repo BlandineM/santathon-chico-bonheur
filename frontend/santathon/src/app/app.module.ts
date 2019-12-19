@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CitationCardsComponent } from './citation-cards/citation-cards.component';
+import { PodiumComponent } from './podium/podium.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CitationCardsComponent
+    CitationCardsComponent,
+    PodiumComponent
   ],
   imports: [
     BrowserModule,
