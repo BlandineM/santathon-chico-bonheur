@@ -34,7 +34,7 @@ class Authors
     private $scoreAuth;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255")
      */
     private $image;
 
