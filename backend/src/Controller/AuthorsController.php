@@ -23,6 +23,7 @@ class AuthorsController extends AbstractController
         return $this->render('authors/index.html.twig', [
             'authors' => $authorsRepository->findAll(),
         ]);
+        // return $this->json(['author'=>$authorsRepository]);
     }
 
     /**
