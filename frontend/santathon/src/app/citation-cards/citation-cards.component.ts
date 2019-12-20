@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { Input } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 @Injectable()
 export class ConfigService {
   private people = [
@@ -10,6 +12,7 @@ export class ConfigService {
       citation: "Inconsciemment, il faut pas s'endormir"
     }
   ];
+
   constructor(private httpClient: HttpClient) {}
 
   getAppareilsFromServer() {
@@ -34,4 +37,9 @@ export class CitationCardsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+  
+  vote() {
+    window.alert('Vous avez voté');
+  }
 }
+
